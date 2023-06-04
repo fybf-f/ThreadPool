@@ -74,6 +74,7 @@ public:
 private:
       /* 
           * 定义线程函数在ThreadPool线程池中，方便访问访问ThreadPool线程池函数
+          * 该线程函数用于执行任务队列中的任务
       */
     void threadFunc();
 

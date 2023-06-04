@@ -1,19 +1,4 @@
-﻿  正在验证源
+﻿  正在验证体系结构
+  正在验证源
   正在将源远程复制到“192.168.254.131”
-  正在验证体系结构
-  正在验证体系结构
   正在启动远程生成
-  正在编译源:
-  main.cpp
-  threadpool.cpp
-C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.cpp(41,66): warning : comparison of integer expressions of different signedness: ‘std::queue<std::shared_ptr<Task> >::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.cpp(41,66): warning :    41 |         notFull_.wait(lock, [&]()->bool { return taskQue_.size() > taskQueMaxThreshHold_;  });
-C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.cpp(41,66): warning :       |                                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
-C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.cpp(60,27): warning : comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
-C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.cpp(60,27): warning :    60 |         for (int i = 0; i < initThreadSize_; i++)
-C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.cpp(60,27): warning :       |                         ~~^~~~~~~~~~~~~~~~~
-C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.cpp(73,27): warning : comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
-C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.cpp(73,27): warning :    73 |         for (int i = 0; i < initThreadSize_; i++)
-C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.cpp(73,27): warning :       |                         ~~^~~~~~~~~~~~~~~~~
-  正在链接对象
-  ThreadPool.vcxproj -> C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\bin\x64\Debug\ThreadPool.out
