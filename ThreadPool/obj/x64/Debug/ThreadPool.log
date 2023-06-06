@@ -1,4 +1,50 @@
-﻿  正在验证体系结构
-  正在验证源
+﻿  正在验证源
   正在将源远程复制到“192.168.254.131”
+  正在验证体系结构
+  正在验证体系结构
   正在启动远程生成
+  正在编译源:
+  main.cpp
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\main.cpp(61,75): error : use of deleted function ‘Result::Result(const Result&)’
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(127,7): message : ‘Result::Result(const Result&)’ is implicitly deleted because the default definition would be ill-formed:
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(127,7): message :   127 | class Result
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(127,7): message :       |       ^~~~~~
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(127,7): error : use of deleted function ‘Any::Any(const Any&)’
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(25,5): message : declared here
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(25,5): message :    25 |     Any(const Any&) = delete;
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(25,5): message :       |     ^~~
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(127,7): error : use of deleted function ‘Semaphore::Semaphore(const Semaphore&)’
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(127,7): error :   127 | class Result
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(127,7): error :       |       ^~~~~~
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(91,7): message : ‘Semaphore::Semaphore(const Semaphore&)’ is implicitly deleted because the default definition would be ill-formed:
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(91,7): message :    91 | class Semaphore
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(91,7): message :       |       ^~~~~~~~~
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(91,7): error : use of deleted function ‘std::mutex::mutex(const std::mutex&)’
+/usr/include/c++/11/bits/std_mutex.h(94,5): message : declared here
+/usr/include/c++/11/bits/std_mutex.h(94,5): message :    94 |     mutex(const mutex&) = delete;
+/usr/include/c++/11/bits/std_mutex.h(94,5): message :       |     ^~~~~
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(91,7): error : use of deleted function ‘std::condition_variable::condition_variable(const std::condition_variable&)’
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(91,7): error :    91 | class Semaphore
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(91,7): error :       |       ^~~~~~~~~
+/usr/include/c++/11/condition_variable(86,5): message : declared here
+/usr/include/c++/11/condition_variable(86,5): message :    86 |     condition_variable(const condition_variable&) = delete;
+/usr/include/c++/11/condition_variable(86,5): message :       |     ^~~~~~~~~~~~~~~~~~
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(127,7): error : use of deleted function ‘std::atomic<bool>::atomic(const std::atomic<bool>&)’
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(127,7): error :   127 | class Result
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(127,7): error :       |       ^~~~~~
+/usr/include/c++/11/atomic(72,5): message : declared here
+/usr/include/c++/11/atomic(72,5): message :    72 |     atomic(const atomic&) = delete;
+/usr/include/c++/11/atomic(72,5): message :       |     ^~~~~~
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\main.cpp(64,13): warning : unused variable ‘sum’ [-Wunused-variable]
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\main.cpp(64,13): warning :    64 |         int sum = res.get().cast_<int>();  // get������һ��Any������ôת���ɾ������ͣ�
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\main.cpp(64,13): warning :       |             ^~~
+  threadpool.cpp
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.cpp(83,27): warning : comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.cpp(83,27): warning :    83 |         for (int i = 0; i < initThreadSize_; i++)
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.cpp(83,27): warning :       |                         ~~^~~~~~~~~~~~~~~~~
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.cpp(96,27): warning : comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.cpp(96,27): warning :    96 |         for (int i = 0; i < initThreadSize_; i++)
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.cpp(96,27): warning :       |                         ~~^~~~~~~~~~~~~~~~~
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(146,22): warning : ‘Result::isValid_’ will be initialized after [-Wreorder]
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.h(145,27): warning : ‘std::shared_ptr<Task> Result::task_’ [-Wreorder]
+C:\ProjectCodeFile\ProjectThreadPool\ThreadPool\threadpool.cpp(210,1): warning : when initialized here [-Wreorder]
